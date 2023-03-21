@@ -1,0 +1,111 @@
+.hero{
+    height: 100vh;
+   
+    color: white;
+    display: flex;
+    position: relative;
+}
+.hcontainer{
+    position: absolute;
+    top: 25vh;
+   margin-left:50px;
+   display: flex;
+   
+}
+.left{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+
+.heading{
+    font-size: 4.2rem;
+   
+}
+.whatido{
+    display: flex;
+    align-items: center;
+    color: #FF5F9E;
+    
+}
+.line{
+    height: 0.5rem;
+ 
+}
+.subtitle{
+    font-size: xx-large;
+    margin-left: 0.5rem;
+   
+}
+.desc{
+    font-size: x-large;
+   
+}
+
+
+
+
+/*///////////////////////////////////right part//////////////////////////////////*/
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+
+.right{
+    flex: 3;
+    
+}
+.ironman{
+    height: 32rem;
+    width: 32rem;
+    filter: saturate(200%);
+    
+}
+/* media queries */
+@media only screen and (max-width: 768px) {
+    .hcontainer {
+      top: 10vh;
+      flex-direction: column;
+    }
+  
+    .left {
+      margin: 0;
+      text-align: center;
+      padding-right: 13.5vw;
+    }
+  
+    .heading {
+      font-size: 2.5rem;
+      margin-top: 15vh;
+    }
+  
+    .whatido {
+      margin-top: 2rem;
+    }
+  
+    .line {
+      display: none;
+    }
+  
+    .subtitle {
+      font-size: x-large;
+    }
+  
+    .desc {
+      font-size: medium;
+    }
+  
+    .right {
+      margin-top: 2rem;
+    }
+  
+    .ironman {
+      height: 20rem;
+      width: 20rem;
+    }
+  }

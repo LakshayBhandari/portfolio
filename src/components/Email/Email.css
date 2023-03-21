@@ -1,0 +1,127 @@
+.emailc {
+    padding: 10%;
+  }
+  
+  .emailc::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .econtainer {
+    display: flex;
+    color: white;
+    display: flex;
+  }
+  
+  .eleft {
+    flex: 1;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: flex-end;
+  }
+  
+  .fheading {
+    font-size: xx-large;
+    margin: -20px;
+  }
+  
+  input {
+    padding: 20px;
+    background-color: #e8e6e6;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    padding: 20px;
+    background-color: #e8e6e6;
+    border: none;
+    border-radius: 5px;
+    font: 1em sans-serif;
+    text-decoration: none;
+    resize: none;
+  }
+  
+  .send {
+    background-color: #e90064;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .eright {
+    flex: 1;
+    display: flex;
+    margin-left: 1rem;
+  }
+  
+  .mapchart {
+    padding: 0.5rem;
+  }
+  
+  a{
+   color: white;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+  margin-top:1vh
+  }
+  a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+.link{
+  background-color: #e90064;
+ height: 5%;
+ width: 50%;
+ display: flex;align-items: center;
+ justify-content: center;
+ border-radius:5px;
+ 
+}
+
+a:active { text-decoration: none; }
+
+  @media screen and (max-width: 768px) {
+    .emailc {
+      padding: 5%;
+    }
+  
+    .econtainer {
+      flex-direction: column;
+    }
+  
+    .eright {
+      margin-left: 0;
+      margin-top: 2rem;
+     width: 88vw;
+    }
+    a{
+      margin-top: 1.1vh;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .form{
+      gap: 20px;
+    }
+    input,
+    textarea,
+    .send{
+      padding: 10px;
+      font-size: small;
+    }
+    a{
+      margin-top: 1.1vh;
+    }
+  }

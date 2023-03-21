@@ -1,0 +1,130 @@
+/* default styles */
+.pcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 175px;
+    margin-right: 175px;
+  
+   
+  }
+  
+  .tilt {
+    padding: 50px;
+    
+  }
+  
+  .projectcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+ 
+  }
+  
+  .card {
+    width: 300px;
+    height: 350px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    overflow: hidden;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardimg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .card3 {
+    width: 300px;
+    height: 350px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+ 
+  }
+  
+  .card3:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+  
+  .card2 {
+    width: 300px;
+    height: 350px;
+    background-image: linear-gradient(
+      163deg,
+      rgb(179, 0, 94) 0%,
+      #060047 100%
+    );
+    border-radius: 10px;
+    transition: all 0.3s;
+  
+  }
+  
+  .card2:hover {
+    box-shadow: 0px 0px 30px 1px rgb(179, 0, 94);
+  }
+  
+  .pdesc {
+    color: #fad5e3;
+    width: 270px;
+    margin-right: 20px;
+  }
+  
+  .ballheading {
+    margin-left: 10%;
+    color: whitesmoke;
+    font-size: 500%;
+  }
+  
+  /* media queries for smaller screens */
+  
+  @media only screen and (max-width: 760px) {
+    .cardimg {
+      height: auto;
+    }
+  
+    .pcontainer{
+     margin-top:  8%;
+    }
+    
+    .card {
+      width: 80%;
+      height: 450px;
+    }
+    
+    .projectcard {
+      margin: 10px;
+    }
+    
+    .projects {
+      margin-left: 35px;
+      margin-right: 5px;
+  
+    }
+    .ballheading {
+      color: whitesmoke;
+      font-size: 250%;
+    }
+  }
+  

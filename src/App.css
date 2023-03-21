@@ -1,0 +1,24 @@
+.App{
+  height: 100%;
+  background-color: #B3005E;
+opacity: 1;
+background-image: radial-gradient(circle at center center, #060047, #B3005E), repeating-radial-gradient(circle at center center, #060047, #060047, 40px, transparent 80px, transparent 40px);
+background-blend-mode: multiply;
+scroll-snap-type: y mandatory;
+scroll-behavior: smooth;
+overflow-y: auto;
+scrollbar-width: none;
+
+}
+@media (max-width: 768px) {
+  .App {
+    background-image: radial-gradient(
+        circle at center center,
+        #060047,
+        #B3005E
+      ),
+      linear-gradient(to bottom, #060047, #B3005E);
+    background-blend-mode: multiply;
+    overflow: hidden;
+  }
+}
